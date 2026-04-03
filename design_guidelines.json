@@ -1,0 +1,144 @@
+{
+  "project_name": "Pasteçaria Degrau Azul",
+  "app_type": "marketing_site",
+  "theme": "light",
+  "archetype": "1_organic_earthy",
+  "vibe": "Warm, artisanal, premium luxury, authentic Portuguese bakery. predominantly wood tones, pastel white, neutral colors, wood textures and LEDs aesthetic.",
+  "colors": {
+    "background": {
+      "default": "#FAF9F6",
+      "description": "Pastel white / Off-white, soft paper-like base"
+    },
+    "primary": {
+      "default": "#0B1D3A",
+      "description": "Navy blue (Azul Marinho) for luxury accents, CTAs, and thin structural borders"
+    },
+    "primary_foreground": {
+      "default": "#FAF9F6",
+      "description": "Text on primary buttons"
+    },
+    "secondary": {
+      "default": "#EADDD7",
+      "description": "Warm beige / Wood tone for soft backgrounds"
+    },
+    "accent": {
+      "default": "#C4A484",
+      "description": "Wood texture color / LED glow tone for highlights"
+    },
+    "text": {
+      "heading": "#0A0F1A",
+      "body": "#4A5568",
+      "muted": "#718096"
+    },
+    "border": {
+      "default": "rgba(11, 29, 58, 0.15)",
+      "focus": "#0B1D3A"
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "Playfair Display, serif",
+      "weight": "font-normal to font-semibold",
+      "tracking": "tracking-tight",
+      "usage_rules": "Use for all H1, H2, H3. Never use bold/black weights for luxury feel, stick to regular/medium."
+    },
+    "body": {
+      "family": "Outfit, sans-serif",
+      "weight": "font-light to font-normal",
+      "tracking": "tracking-normal",
+      "usage_rules": "Clean, highly readable geometry to contrast the ornate serif headings."
+    },
+    "accents": {
+      "family": "Outfit, sans-serif",
+      "weight": "font-medium",
+      "tracking": "tracking-[0.2em]",
+      "transform": "uppercase",
+      "usage_rules": "Use for overlines, small labels, and category tags."
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy: p-12, p-16, p-24 for main sections to give breathing room. Asymmetry creates tension and luxury.",
+    "container": "Max width 7xl, mx-auto, px-6 md:px-12",
+    "bento_grid": "Use Mode A (Tetris Grid) for Gallery and About sections. gap-8 to gap-12. Overlap elements slightly to break standard rigid boxes.",
+    "borders": "Use 1px borders (border-border) to structure sections, referencing the 'Degrau' (step/structure) architectural motif."
+  },
+  "components": {
+    "navigation": {
+      "style": "Glassmorphism. backdrop-blur-xl bg-[#FAF9F6]/80 border-b border-[#0B1D3A]/10.",
+      "behavior": "Sticky top, Z-50. Navigation links must be visible on desktop."
+    },
+    "buttons": {
+      "primary": "Solid #0B1D3A background, #FAF9F6 text, rounded-none or rounded-sm, hover:bg-[#0B1D3A]/90 transition-all",
+      "secondary": "Transparent background, border border-[#0B1D3A] text-[#0B1D3A], rounded-none or rounded-sm hover:bg-[#0B1D3A]/5 transition-all"
+    },
+    "cards": {
+      "style": "Flat, 1px subtle border, NO default shadow. On hover: -translate-y-1, subtle shadow-lg, border color darkens.",
+      "image_treatment": "Images must scale smoothly on hover within hidden overflow container."
+    },
+    "forms": {
+      "style": "Minimalist. Use Shadcn components but override borders to be rounded-none. Inputs should have subtle focus rings in Navy Blue."
+    },
+    "admin_dashboard": {
+      "style": "Mode B (Control Room Grid). Dense, functional, clear hierarchy. Use Shadcn components for tables and forms. Keep the same font families but smaller sizing."
+    }
+  },
+  "media": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1764486601113-a6856cdce5fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiYWtlcnklMjBzdG9yZWZyb250fGVufDB8fHx8MTc3NTI0Mzk5OXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Luxury bakery storefront at dusk",
+      "treatment": "Use as a split-screen or large right-aligned image. Overlay max bg-black/20 if text is placed directly over it, or use Navy Blue gradient."
+    },
+    "about": {
+      "url": "https://images.unsplash.com/photo-1587288672797-74093d795afc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwyfHx3YXJtJTIwY2FmZSUyMGludGVyaW9yJTIwd29vZHxlbnwwfHx8fDE3NzUyNDM5Nzh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Warm wooden cafe interior with chairs and tables",
+      "treatment": "Tall portrait crop (col-span-4 row-span-2) in a bento layout."
+    },
+    "menu_highlights": [
+      {
+        "url": "https://images.unsplash.com/photo-1771835101104-654333861d53?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxwb3J0dWd1ZXNlJTIwcGFzdGVsJTIwZGUlMjBuYXRhJTIwY29mZmVlfGVufDB8fHx8MTc3NTI0Mzk3OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Pastel de nata pastries",
+        "title": "Pastel de Nata"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1687182845783-dc091d25bcc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxwb3J0dWd1ZXNlJTIwcGFzdGVsJTIwZGUlMjBuYXRhJTIwY29mZmVlfGVufDB8fHx8MTc3NTI0Mzk3OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Small Portuguese pies on wooden tray",
+        "title": "Assorted Pastries"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1668396001678-d33131800ea7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxwb3J0dWd1ZXNlJTIwcGFzdGVsJTIwZGUlMjBuYXRhJTIwY29mZmVlfGVufDB8fHx8MTc3NTI0Mzk3OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Pastries on a plate",
+        "title": "Signature Bakes"
+      }
+    ],
+    "textures": {
+      "url": "https://images.pexels.com/photos/5912576/pexels-photo-5912576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Dark blue textured background",
+      "treatment": "Use inside specific feature sections or footer background with white text to bring the Navy Blue luxury accent to life."
+    }
+  },
+  "animations": {
+    "hover": "Subtle scale up (scale-105) for images, color shifts for buttons.",
+    "scroll": "Use Framer Motion for fade-in-up (y: 20, opacity: 0 -> y: 0, opacity: 1) on scroll for text blocks.",
+    "marquee": "Use an Editorial Ribbon strategy for a banner highlighting values: 'Artisanal • Freshly Baked • Portuguese Tradition • Premium Quality'. Very slow, subtle, using Serif font, Navy text on soft beige background."
+  },
+  "accessibility": {
+    "contrast": "Ensure Navy Blue text on Pastel White meets >4.5:1. Button text must be Off-white.",
+    "testing": "All interactive elements must have data-testid (e.g., data-testid='nav-menu-link', data-testid='contact-submit-button')."
+  },
+  "dependencies": {
+    "lucide-react": "For UI icons (menu, close, map-pin, phone, instagram).",
+    "framer-motion": "For elegant page reveals and image load animations."
+  },
+  "instructions_to_main_agent": [
+    "Build the public marketing site with Hero, Menu, About, Gallery, Location, Contact pages/sections.",
+    "Create an Admin Panel (dashboard) route (e.g., /admin) for managing menu items.",
+    "Install 'lucide-react' and 'framer-motion' using yarn.",
+    "Do NOT use 'Inter' for headings. Use 'Playfair Display' imported via Google Fonts for headings, and 'Outfit' for body.",
+    "Follow the generous spacing philosophy (py-24, gap-12).",
+    "Use the exact media URLs provided in this JSON. DO NOT use placeholders.",
+    "Ensure the design feels like a high-end, premium artisanal bakery with predominantly pastel white and wood tones, with sharp Navy Blue accents.",
+    "Apply 'data-testid' to all buttons, links, and form inputs for testing.",
+    "Embed a responsive Google Maps iframe in the Location section.",
+    "Use Shadcn UI for forms, dialogs, and admin tables, but override styles to be sharp (rounded-none) and border-thin (border-[#0B1D3A]/20)."
+  ]
+}
