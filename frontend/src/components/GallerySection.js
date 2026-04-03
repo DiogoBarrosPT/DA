@@ -64,7 +64,8 @@ export default function GallerySection() {
 
       {/* Lightbox */}
       <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
-        <DialogContent className="max-w-4xl p-0 bg-transparent border-none shadow-none">
+        <DialogContent className="max-w-4xl p-0 bg-transparent border-none shadow-none" aria-describedby="gallery-lightbox-desc">
+          <span className="sr-only" id="gallery-lightbox-desc">{selected?.caption || 'Imagem da galeria'}</span>
           {selected && (
             <img
               src={selected.image_url}
